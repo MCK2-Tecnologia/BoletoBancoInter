@@ -50,3 +50,6 @@ $ dotnet run
 Acesse o ***swagger*** para testes dos endpoints:
 
 http://localhost:5010/swagger/index.html
+
+## Próximas atualizações
+15/12/2020 - Listagem de boletos
