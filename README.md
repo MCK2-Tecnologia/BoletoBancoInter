@@ -1,6 +1,13 @@
 # BoletoBancoInter
 Backend API para cadastro, exibição e geração do PDF de boletos do banco inter em .Net Core.
 
+### Funcionalidades Implementadas
+    - Cadastro de Boleto
+    - Obter Detalhamento do Boleto
+    - Executar Baixa de Boleto
+    - Gerar PDF do Boleto
+    - Pesquisa de Boleto (Com Paginação)
+
 ### Geração do Certificado
 
 Execute 1 dos comandos abaixo para gerar os arquivos key e csr
@@ -51,5 +58,7 @@ Acesse o ***swagger*** para testes dos endpoints:
 
 http://localhost:5010/swagger/index.html
 
-## Próximas atualizações
-15/12/2020 - Listagem de boletos
+
+**ATENÇÃO!** 
+ - A MCK2 TECNOLOGIA NÃO SE RESPONSABILIZA POR QUALQUER OPERÇÃO FINANCEIRA QUE FAZ USO DO CÓDIGO AQUI PUBLICADO.
+ - O CÓDIGO DEVERÁ SER UTILIZADO PARA FINS DE ESTUDOS E APOIO PARA IMPLEMENTAÇÃO EM SEU SOFTWARE.

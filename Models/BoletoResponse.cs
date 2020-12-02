@@ -2,7 +2,7 @@ using System;
 
 namespace BoletoInter.Models
 {
-    public class BoletoResponse
+    public class BoletoResponse : BoletoResponseMensagem
     {
         public String seuNumero { get; set; }
 
@@ -11,7 +11,5 @@ namespace BoletoInter.Models
         public String codigoBarras { get; set; }
 
         public String linhaDigitavel { get; set; }
-
-        public String message { get; set; }
     }
 }

@@ -41,9 +41,23 @@ namespace BoletoInter.Controllers
 
         [Route("cadastro")]
         [HttpPost]
-        public async Task<ActionResult<BoletoResponse>> CadastraBoleto(Boleto dados)
+        public async Task<ActionResult<BoletoResponse>> cadastraBoleto(Boleto dados)
         {
-            return await _boletoService.CadastrarBoleto(dados);
+            return await _boletoService.cadastrarBoleto(dados);
+        }
+
+        [Route("baixa")]
+        [HttpPost]
+        public async Task<ActionResult<BoletoResponseMensagem>> executarBaixaBoleto(BoletoBaixa dados)
+        {
+            return await _boletoService.executarBaixaBoleto(dados);
+        }
+
+        [Route("pesquisa")]
+        [HttpPost]
+        public async Task<ActionResult<BoletoPesquisaResponse>> pesquisaPaginada(BoletoPesquisaRequest dados)
+        {
+            return await _boletoService.pesquisaPaginada(dados);
         }
     }
 }
